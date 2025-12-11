@@ -12,7 +12,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 # this is to load the api key from the .env file 
-load_dotenv()
+# load_dotenv()
 API_KEY = os.getenv("GOOGLE_API_KEY")
 if not API_KEY:
     raise RuntimeError("GOOGLe_API_KEY is not found in the (.env) file")
